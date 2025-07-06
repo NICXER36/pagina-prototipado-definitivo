@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - Sistema de Gestión Médica</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js" defer></script>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Iniciar Sesión</h1>
+      <form id="loginForm">
+        <div class="input-container">
+          <span class="input-icon">👤</span>
+          <input type="text" id="username" placeholder="Nombre de Usuario" required />
+        </div>
+        <div class="input-container">
+          <span class="input-icon">🔒</span>
+          <input
+            type="password"
+            id="password"
+            placeholder="Contraseña"
+            required
+          />
+          <button type="button" class="toggle-password" onclick="togglePassword()" title="Mostrar/Ocultar contraseña">
+            👁
+          </button>
+        </div>
+        <div class="remember-me">
+          <input type="checkbox" id="rememberMe" />
+          <label for="rememberMe">Recuérdame</label>
+        </div>
+        <button type="submit">Ingresar</button>
+      </form>
+    </div>
+  </body>
+</html>

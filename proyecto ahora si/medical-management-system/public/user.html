@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Panel de Usuario</title>
+    <link rel="stylesheet" href="css/user.css">
+    <script src="js/user.js" defer></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <img src="https://via.placeholder.com/80" alt="Perfil" id="sidebarProfileImage" />
+      <h2 id="sidebarUserName"></h2>
+      <button onclick="showWaitingList()">Lista de espera</button>
+      <button onclick="showMedicalHistory()">Historial médico</button>
+      <button onclick="showAppointments()">Calendario de citas</button>
+      <button>Mensajes</button>
+      <button onclick="showProfile()">Ver mi perfil</button>
+      <button class="logout" onclick="logout()">Cerrar sesión</button>
+    </div>
+    <div class="content" id="content">
+      <h1>Bienvenido al Panel de Usuario</h1>
+      <p>Selecciona una opción del menú lateral para comenzar.</p>
+    </div>
+    
+  </body>
+</html>
